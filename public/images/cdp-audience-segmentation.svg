@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0.05"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.05"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="980" cy="120" r="180" fill="none" stroke="#6366f1" stroke-width="1" opacity="0.08"/>
+  <circle cx="980" cy="120" r="130" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.08"/>
+  <circle cx="980" cy="120" r="80" fill="#6366f1" opacity="0.04"/>
+
+  <!-- Left content -->
+  <!-- Tag -->
+  <rect x="60" y="72" width="180" height="28" rx="14" fill="#6366f1" opacity="0.2"/>
+  <text x="150" y="91" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#a5b4fc" text-anchor="middle" letter-spacing="2">DATA ENGINEERING</text>
+
+  <!-- Title -->
+  <text x="60" y="170" font-family="'Segoe UI', Arial, sans-serif" font-size="52" font-weight="700" fill="#f1f5f9">CDP Audience</text>
+  <text x="60" y="232" font-family="'Segoe UI', Arial, sans-serif" font-size="52" font-weight="700" fill="url(#accent)">Segmentation</text>
+  <text x="60" y="294" font-family="'Segoe UI', Arial, sans-serif" font-size="52" font-weight="700" fill="#f1f5f9">Pipeline</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="345" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#94a3b8">Signal-based customer segmentation with overlap analysis</text>
+  <text x="60" y="370" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#94a3b8">and multi-channel activation for data-driven marketing.</text>
+
+  <!-- Tech tags -->
+  <rect x="60" y="405" width="78" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="99" y="424" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">Python</text>
+
+  <rect x="148" y="405" width="60" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="178" y="424" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">SQL</text>
+
+  <rect x="218" y="405" width="100" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="268" y="424" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">Pandas</text>
+
+  <rect x="328" y="405" width="100" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="378" y="424" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">Jupyter</text>
+
+  <rect x="438" y="405" width="100" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="488" y="424" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">scikit-learn</text>
+
+  <!-- Divider -->
+  <line x1="60" y1="470" x2="560" y2="470" stroke="#334155" stroke-width="1"/>
+
+  <!-- Stats row -->
+  <text x="60" y="510" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#f1f5f9">4</text>
+  <text x="60" y="530" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#64748b">Notebooks</text>
+
+  <text x="170" y="510" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#f1f5f9">4</text>
+  <text x="170" y="530" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#64748b">SQL Modules</text>
+
+  <text x="300" y="510" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#f1f5f9">6</text>
+  <text x="300" y="530" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#64748b">Core Modules</text>
+
+  <text x="420" y="510" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#f1f5f9">3</text>
+  <text x="420" y="530" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#64748b">Test Suites</text>
+
+  <!-- Right side: feature cards -->
+  <rect x="660" y="72" width="230" height="110" rx="12" fill="url(#card1)" stroke="#6366f1" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="680" y="105" font-family="'Segoe UI', Arial, sans-serif" font-size="22">📡</text>
+  <text x="714" y="105" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#c7d2fe">Signal Engine</text>
+  <text x="680" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#94a3b8">Behavioral signal detection</text>
+  <text x="680" y="146" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#94a3b8">and scoring pipeline</text>
+  <text x="680" y="164" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#94a3b8">across customer touchpoints</text>
+
+  <rect x="910" y="72" width="230" height="110" rx="12" fill="url(#card2)" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="930" y="105" font-family="'Segoe UI', Arial, sans-serif" font-size="22">🎯</text>
+  <text x="964" y="105" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#a5f3fc">Segment Builder</text>
+  <text x="930" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#94a3b8">Dynamic audience creation</text>
+  <text x="930" y="146" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#94a3b8">with rule-based and ML</text>
+  <text x="930" y="164" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#94a3b8">segmentation strategies</text>
+
+  <rect x="660" y="202" width="230" height="110" rx="12" fill="url(#card3)" stroke="#10b981" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="680" y="235" font-family="'Segoe UI', Arial, sans-serif" font-size="22">🔁</text>
+  <text x="714" y="235" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#6ee7b7">Overlap Analysis</text>
+  <text x="680" y="258" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#94a3b8">Cross-segment audience</text>
+  <text x="680" y="276" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#94a3b8">overlap detection and</text>
+  <text x="680" y="294" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#94a3b8">deduplication logic</text>
+
+  <rect x="910" y="202" width="230" height="110" rx="12" fill="url(#card1)" stroke="#6366f1" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="930" y="235" font-family="'Segoe UI', Arial, sans-serif" font-size="22">🚀</text>
+  <text x="964" y="235" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#c7d2fe">Activation Export</text>
+  <text x="930" y="258" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#94a3b8">Multi-channel audience</text>
+  <text x="930" y="276" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#94a3b8">export for paid media,</text>
+  <text x="930" y="294" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#94a3b8">email, and CRM platforms</text>
+
+  <!-- Flow diagram -->
+  <rect x="660" y="340" width="480" height="60" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <!-- Flow nodes -->
+  <rect x="675" y="355" width="70" height="30" rx="6" fill="#6366f1" opacity="0.8"/>
+  <text x="710" y="375" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="600">Raw Data</text>
+
+  <text x="760" y="375" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#475569" text-anchor="middle">→</text>
+
+  <rect x="775" y="355" width="70" height="30" rx="6" fill="#6366f1" opacity="0.6"/>
+  <text x="810" y="375" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="600">Signals</text>
+
+  <text x="860" y="375" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#475569" text-anchor="middle">→</text>
+
+  <rect x="875" y="355" width="70" height="30" rx="6" fill="#06b6d4" opacity="0.7"/>
+  <text x="910" y="375" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="600">Segments</text>
+
+  <text x="960" y="375" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#475569" text-anchor="middle">→</text>
+
+  <rect x="975" y="355" width="70" height="30" rx="6" fill="#10b981" opacity="0.7"/>
+  <text x="1010" y="375" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="600">Analysis</text>
+
+  <text x="1060" y="375" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#475569" text-anchor="middle">→</text>
+
+  <rect x="1075" y="355" width="55" height="30" rx="6" fill="#f59e0b" opacity="0.7"/>
+  <text x="1102" y="375" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="600">Activate</text>
+
+  <!-- GitHub link -->
+  <text x="660" y="450" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#475569">github.com/annsali/cdp-audience-segmentation-pipeline</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="#0a0f1a"/>
+  <text x="60" y="615" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#334155">Portfolio Project</text>
+  <text x="600" y="615" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#334155" text-anchor="middle">Customer Data Platform · Audience Intelligence · Marketing Analytics</text>
+</svg>

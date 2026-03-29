@@ -4,6 +4,7 @@
   z-index: 1;
   background-color: var(--backgroundColor);
   padding: 80px 0;
+  overflow: hidden;
 }
 
 .work-section h2 {
@@ -50,12 +51,14 @@
 .carousel-content {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 20px;
   width: 100%;
+  overflow: hidden;
 }
 
 .carousel-info {
-  flex: 1;
+  flex-shrink: 0;
+  width: 320px;
   display: flex;
   gap: 30px;
   align-items: flex-start;
@@ -108,10 +111,8 @@
 }
 
 .carousel-image-wrapper {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-shrink: 1;
+  overflow: hidden;
 }
 
 /* ── Navigation Arrows ── */
@@ -183,12 +184,12 @@
 /* ── Work Image (reused) ── */
 .work-image {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .work-image-in {
   position: relative;
+  display: block;
 }
 
 .work-link {
@@ -231,6 +232,7 @@
   max-width: 100%;
   max-height: 400px;
   border-radius: 8px;
+  display: block;
 }
 
 /* ── Responsive ── */
@@ -272,16 +274,8 @@
 
 @media only screen and (max-width: 1025px) {
   .carousel-content {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 30px;
-  }
-
-  .carousel-info {
-    width: 100%;
-  }
-
-  .carousel-image-wrapper {
-    width: 100%;
   }
 
   .carousel-arrow {

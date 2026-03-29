@@ -3,34 +3,42 @@ import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
+function breakEveryN(text: string, n: number) {
+  const words = text.split(" ");
+  return words.reduce((acc, word, i) => {
+    if (i > 0 && i % n === 0) return acc + "\n" + word;
+    return i === 0 ? word : acc + " " + word;
+  }, "");
+}
+
 const projects = [
   {
     title: "CDP Audience Segmentation Pipeline",
     category: "SQL + Python · Salesforce Data Cloud",
     tools: "Signal identification, Calculated Insights via complex SQL (CTEs, window functions), segment activation logic, automated data quality checks across millions of records",
-    image: "/images/placeholder.webp",
+    image: "/images/callhq.png",
     link: "https://github.com/annsali/cdp-audience-segmentation-pipeline",
   },
   {
     title: "Campaign Experimentation & Lift Framework",
     category: "Python · Bayesian & Frequentist Testing",
     tools: "Reusable A/B and multivariate testing framework with Bayesian and frequentist lift measurement, holdout group analysis, sample size calculations, and power analysis",
-    image: "https://github.com/annsali/campaign-experimentation-framework",
-    link: "#",
+    image: "/images/campaign_experimentation.png",
+    link: "https://github.com/annsali/campaign-experimentation-framework",
   },
   {
     title: "B2B Full-Funnel Attribution Dashboard",
     category: "SQL + Tableau · Multi-Touch Attribution",
     tools: "Multi-touch attribution pipeline tracking lead velocity, opportunity conversion, and full-funnel metrics from first touch through closed-won revenue with cohort analysis",
-    image: "https://github.com/annsali/b2b-full-funnel-attribution",
-    link: "#",
+    image: "/images/showcase.png",
+    link: "https://github.com/annsali/b2b-full-funnel-attribution",
   },
   {
     title: "Automated Marketing Data Pipeline",
     category: "SQL + Python · ETL & Reporting Engine",
     tools: "Automated ETL integrating CRM, Meta & Google ad platform APIs, and web analytics into a unified marketing data layer with anomaly detection and scheduled refreshes",
-    image: "/images/placeholder.webp",
-    link: "#",
+    image: "/images/pipeline_architecture.svg",
+    link: "https://github.com/annsali/automated-marketing-pipeline",
   },
 ];
 
@@ -102,13 +110,13 @@ const Work = () => {
                         <h3>0{index + 1}</h3>
                       </div>
                       <div className="carousel-details">
-                        <h4>{project.title}</h4>
+                        <h4 style={{ whiteSpace: "pre-line" }}>{breakEveryN(project.title, 2)}</h4>
                         <p className="carousel-category">
                           {project.category}
                         </p>
                         <div className="carousel-tools">
                           <span className="tools-label">Tools & Features</span>
-                          <p>{project.tools}</p>
+                          <p style={{ whiteSpace: "pre-line" }}>{breakEveryN(project.tools, 3)}</p>
                         </div>
                       </div>
                     </div>
